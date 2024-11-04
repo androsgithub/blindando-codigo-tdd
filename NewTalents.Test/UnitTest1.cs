@@ -18,9 +18,8 @@ public class UnitTest1
     {
         // Arrange
         // Act
-        var _resultadoCalculadora = _calc.Somar(val1, val2);
         // Assert
-        Assert.Equal(resultado, _resultadoCalculadora);
+        Assert.Equal(resultado, _calc.Somar(val1, val2));
     }
 
 
@@ -31,9 +30,8 @@ public class UnitTest1
     {
         // Arrange
         // Act
-        var _resultadoCalculadora = _calc.Somar(val1, val2);
         // Assert
-        Assert.Equal(resultado, _resultadoCalculadora);
+        Assert.Equal(resultado, _calc.Subtrair(val1, val2));
     }
 
 
@@ -43,9 +41,8 @@ public class UnitTest1
     {
         // Arrange
         // Act
-        var _resultadoCalculadora = _calc.Somar(val1, val2);
         // Assert
-        Assert.Equal(resultado, _resultadoCalculadora);
+        Assert.Equal(resultado, _calc.Multiplicar(val1, val2));
     }
 
 
@@ -55,9 +52,8 @@ public class UnitTest1
     {
         // Arrange
         // Act
-        var _resultadoCalculadora = _calc.Somar(val1, val2);
         // Assert
-        Assert.Equal(resultado, _resultadoCalculadora);
+        Assert.Equal(resultado, _calc.Dividir(val1, val2));
     }
 
     [Fact]
