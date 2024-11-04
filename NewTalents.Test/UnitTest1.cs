@@ -61,4 +61,16 @@ public class UnitTest1
     {
         Assert.Throws<DivideByZeroException>(() => _calc.Dividir(3, 0));
     }
+
+    [Fact]
+    public void HistoricoComItens()
+    {
+        // Arrange
+        // Act
+        _calc.Somar(2, 2);
+        _calc.Subtrair(4, 4);
+        _calc.Multiplicar(3, 3);
+        // Assert
+        Assert.Equal(3, _calc.Historico().Count);
+    }
 }
